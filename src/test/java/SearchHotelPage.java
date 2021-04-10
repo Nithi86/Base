@@ -7,43 +7,39 @@ public class SearchHotelPage extends Base {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(id="location")
+	@FindBy(id = "location")
 	private WebElement dDnlocation;
-	
-	@FindBy(id="hotels")
+
+	@FindBy(id = "hotels")
 	private WebElement dDnHotel;
-	
-	@FindBy(id="room_type")
+
+	@FindBy(id = "room_type")
 	private WebElement dDnRoom;
-	
-	@FindBy(id="Submit")
+
+	@FindBy(id = "Submit")
 	private WebElement btnSearch;
 
-	
+	public WebElement getBtnrooms() {
+		return btnrooms;
+	}
+
+	@FindBy(id = "noofrooms")
+	private WebElement btnrooms;
+
 	public WebElement getdDnlocation() {
 		return dDnlocation;
 	}
 
-	
 	public WebElement getdDnHotel() {
 		return dDnHotel;
 	}
 
-	
 	public WebElement getdDnRoom() {
 		return dDnRoom;
 	}
-
 
 	public WebElement getBtnSearch() {
 		return btnSearch;
 	}
 
-	
-	}
-
-	
-
-
-
-
+}
